@@ -25,39 +25,38 @@
         <option>Львів</option>
         <option>Хмельницький</option>
       </select>
-      <textarea placeholder="Повідомлення"></textarea>
+      <textarea placeholder="Email"></textarea>
       <button type="submit">Зареєструватися</button>
     </form>
   </div>
   <hr>
   <h2>02. елементи</h2>
   <div class="form-elements">
-    
     <div class="form-container">
-        <div class="left">
-            <label><input type="radio" name="delivery" checked> Нова Пошта</label>
-            <label><input type="radio" name="delivery"> Кур’єр</label>
-            <label><input type="radio" name="delivery" disabled> Самовивіз</label>
+      <div class="left">
+        <label><input type="radio" name="delivery" checked> Нова Пошта</label>
+        <label><input type="radio" name="delivery"> Кур’єр</label>
+        <label><input type="radio" name="delivery" disabled> Самовивіз</label>
+      </div>
+
+      <div class="right">
+        <label><input type="checkbox"> Прочитав умови договору</label>
+        <label><input type="checkbox" checked> Згідний з ПДВ 9%</label>
+        <label><input type="checkbox" disabled> Отримувати новини на ел. пошту</label>
+      </div>
+
+      <div class="status-box">
+        <div class="status-row">
+          <span class="status-label">Статус</span>
+          <label><input type="checkbox"> Новинки</label>
+          <label><input type="checkbox" checked> Акційні товари</label>
+          <label><input type="checkbox"> Розпродаж</label>
         </div>
-    
-        <div class="right">
-            <label><input type="checkbox"> Прочитав умови договору</label>
-            <label><input type="checkbox" checked> Згідний з ПДВ 9%</label>
-            <label><input type="checkbox" disabled> Отримувати новини на ел. пошту</label>
-    
-            <div class="status-box">
-                <div class="status-row">
-                    <span class="status-label">Статус</span>
-                    <label><input type="checkbox"> Новинки</label>
-                    <label><input type="checkbox" checked> Акційні товари</label>
-                    <label><input type="checkbox"> Розпродаж</label>
-                </div>
-                <div class="status-row">
-                    <span class="status-label">Дата</span>
-                    <input type="date" value="2018-03-17">
-                </div>
-            </div>
+        <div class="status-row">
+          <span class="status-label">Дата</span>
+          <input type="date" value="2018-03-17">
         </div>
+      </div>
     </div>
   </div>
 
@@ -231,7 +230,7 @@
       <a href="#" class="forgot-link">Забули пароль?</a>
       <label class="custom-checkbox">
         <input type="checkbox">
-        
+
         Запам’ятати пароль
       </label>
       <button type="submit" class="green-btn">Увійти</button>

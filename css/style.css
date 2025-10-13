@@ -30,12 +30,38 @@ h2 {
   max-width: 400px;
   margin-bottom: 40px;
 }
+.form-box input,
+.form-box select,
+.form-box textarea {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+
+.form-box input:focus,
+.form-box select:focus,
+.form-box textarea:focus {
+  border-color: #2196F3;
+  outline: none;
+}
+
 .form-container {
   display: flex;
   gap: 40px;
   align-items: flex-start;
 }
-
+textarea {
+  min-height: 50px;
+  max-height: 150px;
+  min-width: 200px;
+  max-width: 400px;
+}
 .left, .right {
   display: flex;
   flex-direction: column;
@@ -178,7 +204,7 @@ input[type="date"] {
 
 .form-elements {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 30px;
   font-size: 14px;
 }
@@ -651,7 +677,7 @@ input[type="date"] {
   font-weight: 700;
   font-family: "Roboto";
 }
-/*  */
+
 .table-form {
   width: 380px;
   background: #fff;
@@ -688,7 +714,6 @@ input[type="date"] {
   box-sizing: border-box;
   outline: none;
   margin-top: 3px;
-  transition: border-color 0.2s;
 }
 .table-form input:focus,
 .table-form select:focus,
