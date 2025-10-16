@@ -117,7 +117,7 @@
       </tr>
       <tr>
         <td>Пароль:</td>
-        <td><input type="password" placeholder="**********"></td>
+        <td><input type="password" placeholder="Введіть не менше 6"></td>
       </tr>
       <tr>
         <td>Місто:</td>
@@ -167,54 +167,68 @@
   <form class="order-table-form">
     <h2>05. ФОРМА ТАБЛИЦЕЮ</h2>
     <div class="form-caption">Оформлення заявки</div>
-    <table>
-      <tr>
-        <td>Прізвище та ім’я</td>
-        <td><input type="text" value="Василь Вірастюк"></td>
-        <td>Ел. пошта</td>
-        <td><input type="email"></td>
-        <td>Телефон</td>
-        <td><input type="tel"></td>
-      </tr>
-      <tr>
-        <td>Країна</td>
-        <td>
-          <select>
-            <option>Індонезія</option>
-            <option>Україна</option>
-            <option>Польща</option>
-          </select>
-        </td>
-        <td>Адреса</td>
-        <td colspan="3"><input type="text"></td>
-      </tr>
-      <tr>
-        <td>Місто</td>
-        <td><input type="text"></td>
-        <td>Будинок</td>
-        <td><input type="text"></td>
-        <td>Поштовий індекс</td>
-        <td><input type="text"></td>
-      </tr>
-      <tr>
-        <td colspan="6">
-          <label class="custom-checkbox">
-            <input type="checkbox">
-            Я погоджуюсь з правилами оплати та доставки товару
-          </label>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="3" style="text-align:left;">
-          <button type="button" class="white-btn">Повернутися назад</button>
-        </td>
-        <td colspan="3" style="text-align:right;">
-          <button type="submit" class="green-btn">Оформити покупку</button>
-        </td>
-      </tr>
-    </table>
+      <table class="tabletwo">
+        <tr>
+          <td>Прізвище та ім’я</td>
+          <td>Ел. пошта</td>
+          <td>Телефон</td>
+        </tr>
+        <tr>
+          <td><input type="text" value="Василь Вірастюк"></td>
+          <td><input type="email"></td>
+          <td><input type="tel"></td>
+        </tr>
+      </table>
+      <hr>
+      <table class="tablemain">
+        <tr>
+          <td>Країна</td>
+          <td>Адреса</td>
+        </tr>
+        <tr>
+          <td>
+            <select  class="margin">
+              <option>Індонезія</option>
+              <option>Україна</option>
+              <option>Польща</option>
+            </select>
+          </td>
+          <td colspan="3"><input type="text" class="margin"></td>
+        </tr>
+        <tr>
+          <td>Місто</td>
+          <td>Будинок</td>
+          <td>Поштовий індекс</td>
+        </tr>
+        <tr>
+          <td><input type="text"></td>
+          <td><input type="text"></td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td colspan="6">
+            <label class="custom-checkbox">
+              <input type="checkbox">
+              Я погоджуюсь з правилами оплати та доставки товару
+            </label>
+          </td>
+        </tr>
+      </table>
+      <hr>
+      <table class="tableone">
+        <tr>
+          <td colspan="3" style="text-align:left;">
+            <button type="button" class="white-btn">Повернутися назад</button>
+          </td>
+          <td colspan="3" style="text-align:right;">
+            <button type="submit" class="greenbtn">Оформити покупку</button>
+          </td>
+        </tr>
+      </table>
   </form>
+ 
 
+  
   </div>
   <div class="topbar">
     <button class="open-modal-btn">Увійти</button>
